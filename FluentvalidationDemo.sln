@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentvalidationDemoConsoles", "FluentvalidationDemoConsoles\FluentvalidationDemoConsoles.csproj", "{E70EBFF0-8160-4A75-8667-0A92AE05BB60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E70EBFF0-8160-4A75-8667-0A92AE05BB60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E70EBFF0-8160-4A75-8667-0A92AE05BB60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E70EBFF0-8160-4A75-8667-0A92AE05BB60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E70EBFF0-8160-4A75-8667-0A92AE05BB60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57BFC33B-EF10-454E-8E0A-8DD88503B7C2}
+	EndGlobalSection
+EndGlobal
