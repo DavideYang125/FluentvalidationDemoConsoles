@@ -10,11 +10,12 @@ namespace FluentvalidationDemoConsoles
         {
             Books myBook = new Books()
             {
-                Name = "三体",
+                //Name = "三体",
                 Price = 140m,
                 Author = "刘慈欣",
-                Images = null //new List<string>()
-
+                Images = null, //new List<string>()
+                Code = "134",
+                PublishTime=new DateTime(2019,02,09)
             };
             BookDetails bookDetails = new BookDetails()
             {
