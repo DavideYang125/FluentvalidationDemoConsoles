@@ -26,6 +26,8 @@ namespace FluentvalidationDemoConsoles
 
         public int CustomerNum { get; set; }
 
+        public BookCountry country { get; set; }
+
         public class BooksValidator : AbstractValidator<Books>
         {
             public BooksValidator()
@@ -38,6 +40,8 @@ namespace FluentvalidationDemoConsoles
                 RuleFor(x => x.Price).GreaterThan(0).WithMessage("价格必须大于0");
                 RuleFor(x => x.Images).Must(x => x != null && x.Count > 0).WithMessage("必须要有图片");
                 RuleFor(x => x.Code).Length(4).WithMessage("code长度是4");
+
+                RuleFor(x => x.country).IsInEnum().WithMessage("国别错误");
 
                 //RuleForEach的使用
                 RuleForEach(x => x.Images).NotNull().WithMessage("图片地址不能为空");
@@ -66,5 +70,12 @@ namespace FluentvalidationDemoConsoles
                 return result;
             }
         }
+    }
+
+
+    public enum BookCountry
+    {
+        Ch = 0,
+        En = 1
     }
 }
