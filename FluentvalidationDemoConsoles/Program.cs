@@ -15,7 +15,9 @@ namespace FluentvalidationDemoConsoles
                 Author = "刘慈欣",
                 Images = null, //new List<string>()
                 Code = "134",
-                PublishTime=new DateTime(2019,02,09),
+                PublishTime=new DateTime(2019,12,09),
+                StartTime =new DateTime(2019,05,01),
+                EndTime =new DateTime(2019,06,02),
                 country = (BookCountry)5
             };
             BookDetails bookDetails = new BookDetails()

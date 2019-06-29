@@ -24,6 +24,10 @@ namespace FluentvalidationDemoConsoles
 
         public DateTime PublishTime { get; set; }
 
+        public DateTime StartTime { get; set; }
+
+        public DateTime EndTime { get; set; }
+
         public int CustomerNum { get; set; }
 
         public BookCountry country { get; set; }
@@ -52,6 +56,9 @@ namespace FluentvalidationDemoConsoles
                 //子校验
                 RuleFor(x => x.BookDetails).SetValidator(new BookDetailsValidator());
 
+                RuleFor(x => x.PublishTime).GreaterThan(DateTime.Now).WithMessage("时间必须要大于当前时间");
+
+                RuleFor(m => m.EndTime).Must((model, field) => field >= model.StartTime).WithMessage("结束时间必须大于开始时间");
 
                 RuleForEach(x => x.BookCovers).Where(x => x.NeedCover is true).SetValidator(new BookCoverValidator());
 
