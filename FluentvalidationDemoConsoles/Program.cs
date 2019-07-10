@@ -10,6 +10,7 @@ namespace FluentvalidationDemoConsoles
         {
             Books myBook = new Books()
             {
+                //srgswefg
                 //Name = "三体",
                 Price = 140m,
                 Author = "刘慈欣",
